@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffccc7; /* Light pink background */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff66b2; /* Dark pink header background */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+    background-color: #fff; /* White border for the image */
+    padding: 5px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff329d; /* Dark pink link background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #ff1976; /* Light pink link background on hover */
+}
+
+main {
+    background-color: #ffd3c6; /* Light pink content background */
+    padding: 2rem 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #ff329d; /* Dark pink text */
+}
+
+.pink-text {
+    color: #ff329d; /* Dark pink text */
+}
+
+.creative-section {
+    background-color: #fff; /* White background for the section */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for a card-like effect */
+}
+
+.dance-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.dance-image:hover {
+    transform: scale(1.1);
+}/* Custom bullet points style */
+/* Add hover effect and animation to About Me section */
+.about-info {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .about-info-item {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .about-info-item:hover {
+    transform: scale(1.05);
+    color: #ff1976; /* Light pink color on hover */
+  }
+  
+  .about-info-item .highlight {
+    font-size: 1.2rem;
+    color: #ff329d; /* Pink color */
+  }
+  
+  /* Add animation for highlight effect */
+  .about-info-item .highlight::after {
+    content: " 🌟";
+    display: inline-block;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .about-info-item .highlight:hover::after {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+/* Add hover effect to Fun Facts */
+.fun-facts {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .fun-facts h2 {
+    font-size: 1.5rem;
+    color: #ff329d; /* Pink color */
+    margin-bottom: 1rem;
+  }
+  
+  .fun-facts ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .fun-facts li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .fun-facts i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .fun-facts li:hover {
+    transform: scale(1.1);
+    color: #ff1976; /* Light pink color on hover */
+  }
+  
+  
