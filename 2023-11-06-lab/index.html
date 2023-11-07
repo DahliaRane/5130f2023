@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <script>
+        function validateForm() {
+            const emailInput = document.getElementById("email");
+            const phoneInput = document.getElementById("phone");
+            const webpageInput = document.getElementById("webpage");
+
+            // Validate email, phone, and webpage using regular expressions
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            const phoneRegex = /^(\d{3}-\d{3}-\d{4}|\(\d{3}\)\s?\d{3}-\d{4}|\d{10}|\d{3}\s\d{3}\s\d{4})/;
+            const urlRegex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/;
+            
+            const emailIsValid = emailRegex.test(emailInput.value);
+            const phoneIsValid = phoneRegex.test(phoneInput.value);
+            const webpageIsValid = urlRegex.test(webpageInput.value);
+
+            if (emailIsValid && phoneIsValid && webpageIsValid) {
+                document.getElementById("result").innerHTML = '<div class="alert alert-success">Form data is valid!</div>';
+            } else {
+                const errorMessages = [];
+                if (!emailIsValid) {
+                    errorMessages.push('Invalid email address.');
+                }
+                if (!phoneIsValid) {
+                    errorMessages.push('Invalid US phone number.'); // Added a period (.) here
+                }
+                if (!webpageIsValid) {
+                    errorMessages.push('Invalid URL.');
+                }
+
+                document.getElementById("result").innerHTML = '<div class="alert alert-danger">' + errorMessages.join('<br>') + '</div>';
+            }
+
+        }
+
+        function clearForm() {
+            document.getElementById("contactForm").reset();
+            document.getElementById("result").innerHTML = "";
+        }
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+        <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+            <div class="card p-4" style="max-width: 400px;">
+                <h2 class="text-center">Contact Information</h2>
+                <div id="result" class="mb-2"></div>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number (US format):</label>
+                        <input type="text" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="webpage">Web Page:</label>
+                        <input type="text" class="form-control" id="webpage" name="webpage" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="validateForm()">Submit</button>
+                    <button type="button" class="btn btn-secondary" onclick="clearForm()">Cancel</button>
+                </form>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       
+    </body>
+    </html>
