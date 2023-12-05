@@ -1,0 +1,122 @@
+/* YourComponent.css */
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #333; /* Border for the title */
+    padding: 10px;
+  }
+  
+  .left,
+  .right {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .center {
+    flex: 2;
+    text-align: center;
+  }
+  
+  .user-icon,
+  .company-logo {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 50%; /* To make it rounded */
+    border: 2px solid #333; /* Border for the icons */
+  }
+
+
+
+  .menu-container {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .menu-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buttons-container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .buttons-container button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons-container button:hover {
+    background-color: #eee;
+  }
+  
+  .carrot-icon {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+    transition: transform 0.3s;
+  }
+  
+  .carrot-icon.up {
+    transform: rotate(180deg);
+  }
+
+  .button-row{
+    display: flex;
+  }
+  
+  .search-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+  }
+  
+  .search-icon {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
