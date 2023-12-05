@@ -1,0 +1,4 @@
+Employee Management Systems (EMS) are a vital part of  businesses that aim to streamline its operations, increase efficiency, and reduce manual power. 
+It should be able to provide features for employee tracking, timesheet management, payroll calculation, performance evaluation, and many more. 
+However, most existing EMS solutions are either too costly or lack customization, which hinders the small to medium-sized enterprises from adopting them.
+They can't afford expensive Employee Management Systems because they're either too costly or not flexible enough. Our project "PulseHR" creates a cheap and adaptable EMS. It helps small and medium-sized businesses manage their staff better, making their work smoother and helping them grow.
