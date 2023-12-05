@@ -1,0 +1,48 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff; /* Assuming a white background */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* A subtle shadow */
+  }
+  
+  .button {
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #ddd; /* Slightly darker border */
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333; /* Dark text color */
+    text-align: center;
+    width: calc(100% - 12px); /* Full width taking into account margin and border */
+  }
+  
+  .button:hover {
+    background-color: #e7e7e7; /* Slightly darker on hover */
+  }
+  
+  /* Style for the search input */
+  .search-input {
+    padding: 10px;
+    margin: 5px;
+    width: calc(100% - 22px); /* Full width taking into account padding and border */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Assuming you want to hide the browser's default input styles */
+  .search-input:focus {
+    outline: none;
+    border-color: #999;
+  }
+  
+  /* Placeholder for the search input */
+  .search-input::placeholder {
+    color: #999;
+  }
+  

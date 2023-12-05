@@ -1,0 +1,37 @@
+.header {
+    background-color: #343a40; /* Dark background */
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and title */
+}
+
+.logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+}
+
+.navbar {
+    padding: 0 15px;
+}
+
+.nav-link {
+    color: white;
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    color: #ddd; /* Lighter color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+}

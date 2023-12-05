@@ -1,0 +1,20 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+/* index.css or App.css */
+
+body {
+  background-image: url('https://i.stack.imgur.com/Bhpd8.jpg');
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  /* Add other properties as needed for your layout */
+  height: 100vh;
+}
