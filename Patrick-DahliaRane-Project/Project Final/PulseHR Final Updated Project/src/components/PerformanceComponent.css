@@ -1,0 +1,21 @@
+/* src/components/PerformanceComponent.css */
+
+.performance-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px;
+  }
+  
+  .performance-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .performance-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Add more styling as needed */
+  

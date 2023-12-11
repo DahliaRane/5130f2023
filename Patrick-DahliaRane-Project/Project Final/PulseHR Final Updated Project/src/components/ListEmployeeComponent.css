@@ -1,0 +1,61 @@
+/* ListEmployeeComponent.css */
+
+.list-employee-container {
+    position: relative;
+    min-height: 500px;
+}
+
+.table {
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+.bubble {
+    position: absolute;
+    bottom: -150px; /* Start off screen, increased to accommodate larger bubbles */
+    width: 50px; /* Increased size */
+    height: 50px; /* Increased size */
+    border-radius: 50%;
+    background-color: rgba(173, 216, 230, 0.7);;
+    opacity: 0.6;
+}
+
+@keyframes moveUp {
+    0% { bottom: -150px; }
+    100% { bottom: 100%; }
+}
+
+/* Adjusting positions to push bubbles more towards the sides */
